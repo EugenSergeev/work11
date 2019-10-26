@@ -1,0 +1,23 @@
+{
+  "name": "work11",
+  "version": "1.0.0",
+  "description": "Yandex Praktikum, work11",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugenSergeev/work11.git"
+  },
+  "author": "EugenSergeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugenSergeev/work11/issues"
+  },
+  "homepage": "https://github.com/EugenSergeev/work11#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
