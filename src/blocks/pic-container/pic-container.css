@@ -1,0 +1,14 @@
+@import url(./_is-open/pic-container_is-open.css);
+
+.pic-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+}

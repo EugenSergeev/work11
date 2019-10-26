@@ -1,0 +1,17 @@
+.user-info__edit {
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    width: 38px;
+    text-align: center;
+    opacity: 0.5;    
+    cursor: pointer;
+}
+
+.user-info__edit:hover {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
