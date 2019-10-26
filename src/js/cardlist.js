@@ -1,6 +1,6 @@
-'use strict'
+import {Card} from "./card";
 
-class CardList {
+export class CardList {
      constructor (container,arrayCards){
         this.container = container;
         this.arrayCards = arrayCards;

@@ -1,14 +1,11 @@
-'use strict'
+import {Popup} from "./popup";
+import {Api} from "./api";
+import {CardList} from "./cardlist";
 
 const l = (text) => console.log(text);
 
-const buttonAddCard = document.querySelector('.user-info__button');
-const buttonEditProfile = document.querySelector('.user-info__edit');
-let form = null;
-const picContainer = document.querySelector('.pic-container');
 const popup = new Popup(document.querySelector('#popup'));
 const album = new CardList (document.querySelector('.places-list'),[]);
-const myId = "91fc7e5b6e0f805da71b8f32";
 const url = "http://95.216.175.5/cohort2";
 const token = "386c8238-7cc6-475d-b7c2-fb29c9264cb1";
 const api = new Api(url, token);
