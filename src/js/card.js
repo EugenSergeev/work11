@@ -1,5 +1,6 @@
 const myId = "91fc7e5b6e0f805da71b8f32";
 const picContainer = document.querySelector('.pic-container');
+import {api} from "./script";
 
 export class Card {
     constructor(element, container) {

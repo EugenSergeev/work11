@@ -11,8 +11,6 @@ export class CardList {
             this.container.removeChild(this.container.firstChild);
         }
         this.arrayCards.forEach (element => this.addCard(element));
-        //this.arrayCards.reverse();
-        //l(`Всего элементов ${this.arrayCards.length}`);
     }
     
     addCard (element) {
