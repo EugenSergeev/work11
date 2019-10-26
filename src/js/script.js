@@ -6,7 +6,7 @@ const l = (text) => console.log(text);
 
 const popup = new Popup(document.querySelector('#popup'));
 const album = new CardList (document.querySelector('.places-list'),[]);
-const url = "http://95.216.175.5/cohort2";
+const url = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort2' : 'https://praktikum.tk/cohort2'
 const token = "386c8238-7cc6-475d-b7c2-fb29c9264cb1";
 const api = new Api(url, token);
 document.querySelector(".user-info__photo").addEventListener('click',popup.open);
