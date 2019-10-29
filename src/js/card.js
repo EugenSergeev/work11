@@ -1,6 +1,8 @@
-'use strict'
+const myId = "91fc7e5b6e0f805da71b8f32";
+const picContainer = document.querySelector('.pic-container');
+import {api} from "./script";
 
-class Card {
+export class Card {
     constructor(element, container) {
         this.name = element.name;
         this.link = element.link;

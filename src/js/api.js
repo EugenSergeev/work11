@@ -1,6 +1,4 @@
-'use strict'
-
-class Api {
+export class Api {
     constructor (url, token){
         this.url = url;
         this.token = token;

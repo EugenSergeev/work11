@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 
 <body>
   <div class="root">
 
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
 
     <div class="profile root__section">
       <div class="user-info">
         <div class="user-info__photo"></div>
         <div class="user-info__data">
-          <h1 class="user-info__name">Jaques Causteau</h1>
-          <p class="user-info__job">Sailor, Researcher</p>
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
           <button class="user-info__edit">Edit</button>
         </div>
         <button class="button user-info__button">+</button>
@@ -34,14 +34,14 @@
     </div>
     <div class="pic-container">
      <div id="picture" class="popup-pic">
-        <img id="popupPicClose"  src="./images/close.svg" alt="" class="popup__close">
+        <img id="popupPicClose"  src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
         <img id="image" src="#" alt="" class="popup-pic__image">
       </div>
     </div>
 
   </div>
 
-  <script src="index.js></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 </body>
 </html>
